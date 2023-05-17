@@ -14,8 +14,11 @@ class MainActivity : AppCompatActivity() {
 
         mViewPagerAdapter= NameViewPagerAdapter(supportFragmentManager)
         mainViewpager.adapter= mViewPagerAdapter
-        //a페이지 많아지면 부드럽게 지원
+        //a페이지 많아지면 부드럽게 지
         mainViewpager.offscreenPageLimit=5
 
+
+        //탭레이아웃
+        myTabLayout.setupWithViewPager(mainViewpager)
     }
 }
